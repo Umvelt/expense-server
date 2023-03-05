@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'expense-server-win'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E617A47D1C2E4EEEB80C2B3BBA6D4398 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_732B98456BD44FFB95406DF2F7B0EB75 }}
           package: .
