@@ -1,23 +1,23 @@
 {
-  "development": {
-    "username": "root",
-    "password": "1989",
-    "database": "poc",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": "1989",
-    "database": "poc",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": "1989",
-    "database": "poc",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
+    "development": {
+        "username": "reefGuy",
+        "password": "Magic!@#",
+        "database": "expenses-tracker-schema",
+        "host": "expenses-db.mysql.database.azure.com",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "reefGuy",
+        "password": "Magic!@#",
+        "database": "expenses-tracker-schema",
+        "host": "expenses-db.mysql.database.azure.com",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "reefGuy",
+        "password": "Magic!@#",
+        "database": "expenses-tracker-schema",
+        "host": "expenses-db.mysql.database.azure.com",
+        "dialect": "mysql"
+    }
 }
