@@ -10,7 +10,9 @@ require('dotenv').config()
 const Sequelize = require("sequelize");
 const sequelize = require("./models/connectToDB");
 const indexRouter = require("./routes/index");
+const User = require("./models/User.models");
 // const testConnection = require("./testConnection");
+
 
 const app = express();
 
@@ -32,6 +34,20 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api", indexRouter);
+
+app.use("/hello", (req, res) =>
+    res.send("hello world!")
+);
+
+app.use("/getAllUsers", async (req, res) => {
+    try {
+        const users = await User.findAll();
+        if (!users) throw "no users in database!";
+        res.status(200).json("ok");
+    } catch (error) {
+        console.log(error);
+    }
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
